@@ -1,29 +1,15 @@
 This layer depends on:
 
-URI: git://git.yoctoproject.org/poky
+URI: git://git.openembedded.org/openembedded-core
 branch: master
 revision: HEAD
 
 URI: git://git.openembedded.net/meta-openembedded
 branch: master
 revision: HEAD
+subfolder: meta-oe
 
-URI: git://git.yoctoproject.org/meta-raspberrypi
-branch: master
-revision: HEAD
-
-Layer maintainer: Philipp Wagner <mail@philipp-wagner.com>
+Layer maintainer: Artox <privacy@not.given>
 
 
-This layer provides everything to build and develop Firefox OS for 
-Raspberry Pi.
-
-- Two recipes to create SD-card images for a complete system with 
-  Firefox OS: a "production" one and one with additional development
-  tools.
-  -> see rpi-b2g-image and rpi-b2g-dev-image
-
-- A SDK containing a cross-toolchain as well as all necessary libraries
-  to build the Mozilla source code.
-  -> see meta-b2g-sdk
-
+This layer aims to provide a clone of Boot2Gecko based on OopenEmbedded instead of the android buildsystem used by Mozilla.
